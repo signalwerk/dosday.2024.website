@@ -1,0 +1,3 @@
+[submodule "packages/scrape-helpers"]
+	path = packages/scrape-helpers
+	url = git@github.com:signalwerk/scrape-helpers.git

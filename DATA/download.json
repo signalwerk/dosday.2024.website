@@ -1,0 +1,416 @@
+{
+  "https://dostag.ch/": {
+    "error": null,
+    "mimeType": null,
+    "original": {
+      "normalized": "https://dostag.ch/",
+      "url": "https://dostag.ch/"
+    },
+    "path": null,
+    "redirect": {
+      "normalized": "https://dostag.ch/index.php?title=Hauptseite",
+      "url": "https://dostag.ch/index.php?title=Hauptseite"
+    },
+    "status": null,
+    "url": "https://dostag.ch/"
+  },
+  "https://dostag.ch/Baby.gif": {
+    "error": null,
+    "mimeType": "image/gif",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/Baby.gif",
+    "status": 200,
+    "url": "https://dostag.ch/Baby.gif"
+  },
+  "https://dostag.ch/images/0/0c/DOSDAY24-Logo.jpeg": {
+    "error": null,
+    "mimeType": "image/jpeg",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/images/0/0c/DOSDAY24-Logo.jpeg",
+    "status": 200,
+    "url": "https://dostag.ch/images/0/0c/DOSDAY24-Logo.jpeg"
+  },
+  "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/1200px-DOSDAY24-Logo.jpeg": {
+    "error": null,
+    "mimeType": "image/jpeg",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/1200px-DOSDAY24-Logo.jpeg",
+    "status": 200,
+    "url": "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/1200px-DOSDAY24-Logo.jpeg"
+  },
+  "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/120px-DOSDAY24-Logo.jpeg": {
+    "error": null,
+    "mimeType": "image/jpeg",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/120px-DOSDAY24-Logo.jpeg",
+    "status": 200,
+    "url": "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/120px-DOSDAY24-Logo.jpeg"
+  },
+  "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/240px-DOSDAY24-Logo.jpeg": {
+    "error": null,
+    "mimeType": "image/jpeg",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/240px-DOSDAY24-Logo.jpeg",
+    "status": 200,
+    "url": "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/240px-DOSDAY24-Logo.jpeg"
+  },
+  "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/300px-DOSDAY24-Logo.jpeg": {
+    "error": null,
+    "mimeType": "image/jpeg",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/300px-DOSDAY24-Logo.jpeg",
+    "status": 200,
+    "url": "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/300px-DOSDAY24-Logo.jpeg"
+  },
+  "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/450px-DOSDAY24-Logo.jpeg": {
+    "error": null,
+    "mimeType": "image/jpeg",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/450px-DOSDAY24-Logo.jpeg",
+    "status": 200,
+    "url": "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/450px-DOSDAY24-Logo.jpeg"
+  },
+  "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/600px-DOSDAY24-Logo.jpeg": {
+    "error": null,
+    "mimeType": "image/jpeg",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/600px-DOSDAY24-Logo.jpeg",
+    "status": 200,
+    "url": "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/600px-DOSDAY24-Logo.jpeg"
+  },
+  "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/900px-DOSDAY24-Logo.jpeg": {
+    "error": null,
+    "mimeType": "image/jpeg",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/900px-DOSDAY24-Logo.jpeg",
+    "status": 200,
+    "url": "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/900px-DOSDAY24-Logo.jpeg"
+  },
+  "https://dostag.ch/index.php?title=Ausstellung_2024": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?title=Ausstellung_2024.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Ausstellung_2024"
+  },
+  "https://dostag.ch/index.php?title=Ausstellung_2024&printable=yes": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?printable=yes&title=Ausstellung_2024.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Ausstellung_2024&printable=yes"
+  },
+  "https://dostag.ch/index.php?title=Benutzer:Signalwerk": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?title=Benutzer:Signalwerk.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Benutzer:Signalwerk"
+  },
+  "https://dostag.ch/index.php?title=Benutzer:Signalwerk&printable=yes": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?printable=yes&title=Benutzer:Signalwerk.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Benutzer:Signalwerk&printable=yes"
+  },
+  "https://dostag.ch/index.php?title=DOSDAY:%C3%9Cber_DOSDAY": {
+    "error": "Request failed with status code 404",
+    "mimeType": null,
+    "path": null,
+    "status": "error",
+    "url": "https://dostag.ch/index.php?title=DOSDAY:%C3%9Cber_DOSDAY"
+  },
+  "https://dostag.ch/index.php?title=DOSDAY:Datenschutz": {
+    "error": "Request failed with status code 404",
+    "mimeType": null,
+    "path": null,
+    "status": "error",
+    "url": "https://dostag.ch/index.php?title=DOSDAY:Datenschutz"
+  },
+  "https://dostag.ch/index.php?title=DOSDAY:Impressum": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?title=DOSDAY:Impressum.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=DOSDAY:Impressum"
+  },
+  "https://dostag.ch/index.php?title=DOSDAY:Impressum&printable=yes": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?printable=yes&title=DOSDAY:Impressum.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=DOSDAY:Impressum&printable=yes"
+  },
+  "https://dostag.ch/index.php?title=Datei:DOSDAY24-Logo.jpeg": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?title=Datei:DOSDAY24-Logo.jpeg.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Datei:DOSDAY24-Logo.jpeg"
+  },
+  "https://dostag.ch/index.php?title=Datei:DOSDAY24-Logo.jpeg&printable=yes": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?printable=yes&title=Datei:DOSDAY24-Logo.jpeg.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Datei:DOSDAY24-Logo.jpeg&printable=yes"
+  },
+  "https://dostag.ch/index.php?title=Fahrplan_2024": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?title=Fahrplan_2024.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Fahrplan_2024"
+  },
+  "https://dostag.ch/index.php?title=Fahrplan_2024&printable=yes": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?printable=yes&title=Fahrplan_2024.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Fahrplan_2024&printable=yes"
+  },
+  "https://dostag.ch/index.php?title=Hauptseite": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?title=Hauptseite.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Hauptseite"
+  },
+  "https://dostag.ch/index.php?title=Hauptseite&printable=yes": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?printable=yes&title=Hauptseite.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Hauptseite&printable=yes"
+  },
+  "https://dostag.ch/index.php?title=Teilnehmende_2024": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?title=Teilnehmende_2024.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Teilnehmende_2024"
+  },
+  "https://dostag.ch/index.php?title=Teilnehmende_2024&printable=yes": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?printable=yes&title=Teilnehmende_2024.html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Teilnehmende_2024&printable=yes"
+  },
+  "https://dostag.ch/index.php?title=Workshop_%C2%ABPixelfont_like_it%27s_94_%E2%80%93_but_now%C2%BB": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?title=Workshop_«Pixelfont_like_it's_94_–_but_now».html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Workshop_%C2%ABPixelfont_like_it%27s_94_%E2%80%93_but_now%C2%BB"
+  },
+  "https://dostag.ch/index.php?title=Workshop_%C2%ABPixelfont_like_it%27s_94_%E2%80%93_but_now%C2%BB&printable=yes": {
+    "error": null,
+    "mimeType": "text/html",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/index.php?printable=yes&title=Workshop_«Pixelfont_like_it's_94_–_but_now».html",
+    "status": 200,
+    "url": "https://dostag.ch/index.php?title=Workshop_%C2%ABPixelfont_like_it%27s_94_%E2%80%93_but_now%C2%BB&printable=yes"
+  },
+  "https://dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.action.view.filepage%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&only=styles&printable=1&skin=vector": {
+    "error": null,
+    "mimeType": "text/css",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.action.view.filepage|mediawiki.legacy.commonPrint,shared|mediawiki.sectionAnchor|mediawiki.skinning.interface|skins.vector.styles&only=styles&printable=1&skin=vector.css",
+    "status": 200,
+    "url": "https://dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.action.view.filepage%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&only=styles&printable=1&skin=vector"
+  },
+  "https://dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.action.view.filepage%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&only=styles&skin=vector": {
+    "error": null,
+    "mimeType": "text/css",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.action.view.filepage|mediawiki.legacy.commonPrint,shared|mediawiki.sectionAnchor|mediawiki.skinning.interface|skins.vector.styles&only=styles&skin=vector.css",
+    "status": 200,
+    "url": "https://dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.action.view.filepage%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&only=styles&skin=vector"
+  },
+  "https://dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&only=styles&printable=1&skin=vector": {
+    "error": null,
+    "mimeType": "text/css",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.legacy.commonPrint,shared|mediawiki.sectionAnchor|mediawiki.skinning.interface|skins.vector.styles&only=styles&printable=1&skin=vector.css",
+    "status": 200,
+    "url": "https://dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&only=styles&printable=1&skin=vector"
+  },
+  "https://dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&only=styles&skin=vector": {
+    "error": null,
+    "mimeType": "text/css",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.legacy.commonPrint,shared|mediawiki.sectionAnchor|mediawiki.skinning.interface|skins.vector.styles&only=styles&skin=vector.css",
+    "status": 200,
+    "url": "https://dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&only=styles&skin=vector"
+  },
+  "https://dostag.ch/load.php?debug=false&lang=de&modules=startup&only=scripts&printable=1&skin=vector": {
+    "error": null,
+    "mimeType": "text/javascript",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/load.php?debug=false&lang=de&modules=startup&only=scripts&printable=1&skin=vector.js",
+    "status": 200,
+    "url": "https://dostag.ch/load.php?debug=false&lang=de&modules=startup&only=scripts&printable=1&skin=vector"
+  },
+  "https://dostag.ch/load.php?debug=false&lang=de&modules=startup&only=scripts&skin=vector": {
+    "error": null,
+    "mimeType": "text/javascript",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/load.php?debug=false&lang=de&modules=startup&only=scripts&skin=vector.js",
+    "status": 200,
+    "url": "https://dostag.ch/load.php?debug=false&lang=de&modules=startup&only=scripts&skin=vector"
+  },
+  "https://dostag.ch/resources/assets/poweredby_mediawiki_132x47.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/resources/assets/poweredby_mediawiki_132x47.png",
+    "status": 200,
+    "url": "https://dostag.ch/resources/assets/poweredby_mediawiki_132x47.png"
+  },
+  "https://dostag.ch/resources/assets/poweredby_mediawiki_176x62.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/resources/assets/poweredby_mediawiki_176x62.png",
+    "status": 200,
+    "url": "https://dostag.ch/resources/assets/poweredby_mediawiki_176x62.png"
+  },
+  "https://dostag.ch/resources/assets/poweredby_mediawiki_88x31.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/resources/assets/poweredby_mediawiki_88x31.png",
+    "status": 200,
+    "url": "https://dostag.ch/resources/assets/poweredby_mediawiki_88x31.png"
+  },
+  "https://dostag.ch/resources/src/mediawiki.action/images/checker.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/resources/src/mediawiki.action/images/checker.png",
+    "status": 200,
+    "url": "https://dostag.ch/resources/src/mediawiki.action/images/checker.png"
+  },
+  "https://dostag.ch/resources/src/mediawiki.legacy/images/ajax-loader.gif": {
+    "error": null,
+    "mimeType": "image/gif",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/resources/src/mediawiki.legacy/images/ajax-loader.gif",
+    "status": 200,
+    "url": "https://dostag.ch/resources/src/mediawiki.legacy/images/ajax-loader.gif"
+  },
+  "https://dostag.ch/resources/src/mediawiki.legacy/images/spinner.gif": {
+    "error": null,
+    "mimeType": "image/gif",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/resources/src/mediawiki.legacy/images/spinner.gif",
+    "status": 200,
+    "url": "https://dostag.ch/resources/src/mediawiki.legacy/images/spinner.gif"
+  },
+  "https://dostag.ch/resources/src/mediawiki.skinning/images/magnify-clip-ltr.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/resources/src/mediawiki.skinning/images/magnify-clip-ltr.png",
+    "status": 200,
+    "url": "https://dostag.ch/resources/src/mediawiki.skinning/images/magnify-clip-ltr.png"
+  },
+  "https://dostag.ch/resources/src/mediawiki.skinning/images/magnify-clip-rtl.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/resources/src/mediawiki.skinning/images/magnify-clip-rtl.png",
+    "status": 200,
+    "url": "https://dostag.ch/resources/src/mediawiki.skinning/images/magnify-clip-rtl.png"
+  },
+  "https://dostag.ch/skins/Vector/images/arrow-down.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/arrow-down.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/arrow-down.png"
+  },
+  "https://dostag.ch/skins/Vector/images/bullet-icon.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/bullet-icon.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/bullet-icon.png"
+  },
+  "https://dostag.ch/skins/Vector/images/external-link-ltr-icon.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/external-link-ltr-icon.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/external-link-ltr-icon.png"
+  },
+  "https://dostag.ch/skins/Vector/images/page-fade.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/page-fade.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/page-fade.png"
+  },
+  "https://dostag.ch/skins/Vector/images/portal-break.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/portal-break.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/portal-break.png"
+  },
+  "https://dostag.ch/skins/Vector/images/search-fade.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/search-fade.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/search-fade.png"
+  },
+  "https://dostag.ch/skins/Vector/images/search-ltr.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/search-ltr.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/search-ltr.png"
+  },
+  "https://dostag.ch/skins/Vector/images/tab-break.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/tab-break.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/tab-break.png"
+  },
+  "https://dostag.ch/skins/Vector/images/tab-current-fade.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/tab-current-fade.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/tab-current-fade.png"
+  },
+  "https://dostag.ch/skins/Vector/images/tab-normal-fade.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/tab-normal-fade.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/tab-normal-fade.png"
+  },
+  "https://dostag.ch/skins/Vector/images/unwatch-icon-hl.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/unwatch-icon-hl.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/unwatch-icon-hl.png"
+  },
+  "https://dostag.ch/skins/Vector/images/unwatch-icon.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/unwatch-icon.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/unwatch-icon.png"
+  },
+  "https://dostag.ch/skins/Vector/images/user-icon.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/user-icon.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/user-icon.png"
+  },
+  "https://dostag.ch/skins/Vector/images/watch-icon-hl.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/watch-icon-hl.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/watch-icon-hl.png"
+  },
+  "https://dostag.ch/skins/Vector/images/watch-icon-loading.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/watch-icon-loading.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/watch-icon-loading.png"
+  },
+  "https://dostag.ch/skins/Vector/images/watch-icon.png": {
+    "error": null,
+    "mimeType": "image/png",
+    "path": "/Users/DATA/CODE/dosday.2024.website/DATA/html/dostag.ch/skins/Vector/images/watch-icon.png",
+    "status": 200,
+    "url": "https://dostag.ch/skins/Vector/images/watch-icon.png"
+  }
+}
