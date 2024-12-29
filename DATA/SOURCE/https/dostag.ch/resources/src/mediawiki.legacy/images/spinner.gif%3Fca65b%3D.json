@@ -1,0 +1,14 @@
+{
+  "headers": {
+    "server": "nginx",
+    "date": "Sun, 29 Dec 2024 00:55:19 GMT",
+    "content-type": "image/gif",
+    "content-length": "1819",
+    "last-modified": "Tue, 20 Sep 2022 17:12:35 GMT",
+    "connection": "keep-alive",
+    "etag": "\"6329f483-71b\"",
+    "accept-ranges": "bytes"
+  },
+  "status": 200,
+  "uri": "https://dostag.ch/resources/src/mediawiki.legacy/images/spinner.gif?ca65b"
+}

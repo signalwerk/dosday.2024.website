@@ -1,0 +1,19 @@
+{
+  "headers": {
+    "server": "nginx",
+    "date": "Sun, 29 Dec 2024 00:55:19 GMT",
+    "content-type": "text/html; charset=UTF-8",
+    "content-length": "5133",
+    "connection": "keep-alive",
+    "x-content-type-options": "nosniff",
+    "content-language": "de",
+    "x-ua-compatible": "IE=Edge",
+    "link": "</Baby.gif?8c357>;rel=preload;as=image",
+    "vary": "Accept-Encoding,Cookie,User-Agent",
+    "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+    "cache-control": "private, must-revalidate, max-age=0",
+    "last-modified": "Sat, 28 Dec 2024 13:36:02 GMT"
+  },
+  "status": 200,
+  "uri": "https://dostag.ch/Workshop_%C2%ABPixelfont_like_it%27s_94_%E2%80%93_but_now%C2%BB"
+}

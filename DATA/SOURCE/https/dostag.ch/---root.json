@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "server": "nginx",
+    "date": "Sun, 29 Dec 2024 00:55:17 GMT",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "0",
+    "connection": "keep-alive",
+    "x-content-type-options": "nosniff",
+    "vary": "Accept-Encoding,Cookie,User-Agent",
+    "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+    "cache-control": "private, must-revalidate, max-age=0",
+    "last-modified": "Sun, 29 Dec 2024 00:55:17 GMT",
+    "location": "https://dostag.ch/Hauptseite"
+  },
+  "status": 301,
+  "uri": "https://dostag.ch/",
+  "redirected": "https://dostag.ch/Hauptseite"
+}

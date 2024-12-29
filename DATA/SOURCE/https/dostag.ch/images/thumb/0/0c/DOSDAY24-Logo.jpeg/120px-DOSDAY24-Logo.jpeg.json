@@ -1,0 +1,14 @@
+{
+  "headers": {
+    "server": "nginx",
+    "date": "Sun, 29 Dec 2024 00:55:19 GMT",
+    "content-type": "image/jpeg",
+    "content-length": "5389",
+    "last-modified": "Sat, 02 Dec 2023 18:56:48 GMT",
+    "connection": "keep-alive",
+    "etag": "\"656b7df0-150d\"",
+    "accept-ranges": "bytes"
+  },
+  "status": 200,
+  "uri": "https://dostag.ch/images/thumb/0/0c/DOSDAY24-Logo.jpeg/120px-DOSDAY24-Logo.jpeg"
+}

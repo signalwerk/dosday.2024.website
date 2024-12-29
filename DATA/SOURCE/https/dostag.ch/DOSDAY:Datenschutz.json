@@ -1,0 +1,19 @@
+{
+  "headers": {
+    "server": "nginx",
+    "date": "Sun, 29 Dec 2024 00:55:19 GMT",
+    "content-type": "text/html; charset=UTF-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "vary": "Accept-Encoding, Accept-Encoding,Cookie,User-Agent",
+    "x-content-type-options": "nosniff",
+    "content-language": "de",
+    "x-ua-compatible": "IE=Edge",
+    "link": "</Baby.gif?8c357>;rel=preload;as=image",
+    "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+    "cache-control": "private, must-revalidate, max-age=0"
+  },
+  "status": 404,
+  "uri": "https://dostag.ch/DOSDAY:Datenschutz",
+  "error": 404
+}

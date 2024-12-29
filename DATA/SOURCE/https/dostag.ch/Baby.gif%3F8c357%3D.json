@@ -1,0 +1,14 @@
+{
+  "headers": {
+    "server": "nginx",
+    "date": "Sun, 29 Dec 2024 00:55:19 GMT",
+    "content-type": "image/gif",
+    "content-length": "25410",
+    "last-modified": "Tue, 20 Sep 2022 17:35:40 GMT",
+    "connection": "keep-alive",
+    "etag": "\"6329f9ec-6342\"",
+    "accept-ranges": "bytes"
+  },
+  "status": 200,
+  "uri": "https://dostag.ch/Baby.gif?8c357"
+}

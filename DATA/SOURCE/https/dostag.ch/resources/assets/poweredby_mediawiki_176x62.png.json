@@ -1,0 +1,14 @@
+{
+  "headers": {
+    "server": "nginx",
+    "date": "Sun, 29 Dec 2024 00:55:18 GMT",
+    "content-type": "image/png",
+    "content-length": "8519",
+    "last-modified": "Tue, 20 Sep 2022 17:12:35 GMT",
+    "connection": "keep-alive",
+    "etag": "\"6329f483-2147\"",
+    "accept-ranges": "bytes"
+  },
+  "status": 200,
+  "uri": "https://dostag.ch/resources/assets/poweredby_mediawiki_176x62.png"
+}

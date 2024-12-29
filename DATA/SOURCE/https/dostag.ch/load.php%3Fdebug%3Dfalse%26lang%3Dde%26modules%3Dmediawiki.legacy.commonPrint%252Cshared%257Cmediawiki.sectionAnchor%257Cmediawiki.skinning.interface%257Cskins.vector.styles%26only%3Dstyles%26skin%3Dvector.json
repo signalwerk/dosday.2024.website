@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "server": "nginx",
+    "date": "Sun, 29 Dec 2024 00:55:19 GMT",
+    "content-type": "text/css; charset=utf-8",
+    "content-length": "9215",
+    "connection": "keep-alive",
+    "x-content-type-options": "nosniff",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=300, s-maxage=300",
+    "expires": "Sun, 29 Dec 2024 01:00:19 GMT",
+    "etag": "W/\"1js9mlb-gzip\"",
+    "vary": "Accept-Encoding,User-Agent"
+  },
+  "status": 200,
+  "uri": "https://dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&only=styles&skin=vector"
+}
