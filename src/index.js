@@ -1,7 +1,4 @@
 import { WebServer } from "../packages/scrape-helpers/src/server/server.js";
-import { Cache } from "../packages/scrape-helpers/src/server/utils/Cache.js";
-import { RequestTracker } from "../packages/scrape-helpers/src/server/utils/RequestTracker.js";
-import { DataPatcher } from "../packages/scrape-helpers/src/server/utils/DataPatcher.js";
 import { getRelativeURL } from "../packages/scrape-helpers/src/server/utils/getRelativeURL.js";
 import { getMimeWithoutEncoding } from "../packages/scrape-helpers/src/server/utils/mime.js";
 import prettier from "prettier";
@@ -31,10 +28,6 @@ import {
 } from "../packages/scrape-helpers/src/server/processor/write.js";
 
 // Create instances of required components
-const cache = new Cache();
-const requestTracker = new RequestTracker();
-const writeTracker = new RequestTracker();
-const dataPatcher = new DataPatcher();
 
 // Configure data patcher rules
 // dataPatcher
@@ -48,19 +41,12 @@ const dataPatcher = new DataPatcher();
 // Create server instance
 const server = new WebServer({
   urls: ["https://dostag.ch"],
-  cache,
-  dataPatcher,
-  requestTracker,
-  writeTracker,
-  requestConcurrency: 100,
-  fetchConcurrency: 10,
-  parseConcurrency: 100,
 });
 
 // Configure queue processors
 server.configureQueues({
   request: [
-    async (job, next) =>
+    async ({ job, context }, next) =>
       await isDomainValid(
         {
           job,
@@ -68,7 +54,7 @@ server.configureQueues({
         },
         next,
       ),
-    async (job, next) =>
+    async ({ job, context }, next) =>
       await isPathValid(
         {
           job,
@@ -78,67 +64,74 @@ server.configureQueues({
         },
         next,
       ),
-    async (job, next) =>
+    async ({ job, context }, next) =>
       await isAlreadyRequested(
         {
           job,
-          tracker: requestTracker,
-          getKey: (job) => job.data.uri,
+          tracker: context.requestTracker,
         },
         next,
       ),
-    async (job, next) =>
+    async ({ job, context }, next) =>
       await addFetchJob(
         {
           job,
-          events: server.events,
+          createFetchJob: (fetchJobData) =>
+            context.events?.emit("createFetchJob", fetchJobData),
         },
         next,
       ),
   ],
   fetch: [
-    async (job, next) =>
+    async ({ job, context }, next) =>
       await isCached(
         {
           job,
-          events: server.events,
-          cache,
-          getKey: (job) => job.data.uri,
+          createRequestJob: (requestJobData) =>
+            context.events?.emit("createRequestJob", requestJobData),
+          cache: context.cache,
         },
         next,
       ),
-    async (job, next) =>
+    async ({ job, context }, next) =>
       await fetchHttp(
         {
           job,
-          cache,
-          events: server.events,
+          cache: context.cache,
+          createRequestJob: (requestJobData) =>
+            context.events?.emit("createRequestJob", requestJobData),
         },
         next,
       ),
-    async (job, next) =>
+    async ({ job, context }, next) =>
       await addParseJob(
         {
           job,
-          events: server.events,
+          createParseJob: (parseJobData) =>
+            context.events?.emit("createParseJob", parseJobData),
         },
         next,
       ),
   ],
   parse: [
-    async (job, next) =>
+    async ({ job, context }, next) =>
       await guessMimeType(
+        // adds mimeType to job.data
         {
           job,
-          cache,
+          cache: context.cache,
         },
         next,
       ),
-    async (job, next) => {
-      const { data: dataFromCache, metadata } = cache.get(job.data.cache.key);
+    async ({ job, context }, next) => {
+      const { data: dataFromCache, metadata } = context.cache.get(
+        job.data.cache.key,
+      );
 
-      const data = dataPatcher.patch(job.data.uri, `${dataFromCache}`, (log) =>
-        job.log(log),
+      const data = context.dataPatcher.patch(
+        job.data.uri,
+        `${dataFromCache}`,
+        (log) => job.log(log),
       );
 
       if (!data || !metadata) {
@@ -152,56 +145,16 @@ server.configureQueues({
       switch (mimeType) {
         case "application/xhtml+xml":
         case "text/html": {
-          await parseHtml({ job, events: server.events, data }, next);
+          await parseHtml({ job, events: context.events, data }, next);
           break;
         }
         case "text/css": {
-          await parseCss({ job, events: server.events, data }, next);
-          break;
-        }
-        case "application/javascript":
-        //
-        case "text/plain":
-        case "image/png":
-        case "image/jpeg":
-        case "image/jpg":
-        case "image/gif":
-        case "image/webp":
-        case "image/svg+xml":
-        case "image/avif":
-        case "image/apng":
-        case "image/bmp":
-        case "image/tiff":
-        case "image/x-icon":
-        case "text/xml":
-        case "image/vnd.microsoft.icon":
-        case "application/vnd.oasis.opendocument.text":
-        case "application/pdf":
-        case "application/json":
-        case "application/x-font-ttf":
-        case "font/ttf":
-        case "font/woff":
-        case "font/woff2":
-        case "application/vnd.ms-fontobject": // eot
-        case "application/rss+xml":
-        case "application/atom+xml":
-        case "application/rdf+xml":
-        case "application/rss+xml":
-        case "application/rdf+xml":
-        case "application/x-rss+xml":
-        case "application/xml":
-        case "application/x-www-form-urlencoded":
-        case "application/x-shockwave-flash":
-        case "application/epub+zip": {
-          // we don't need to parse these
+          await parseCss({ job, events: context.events, data }, next);
           break;
         }
         default: {
-          throw new Error(
-            `Unsupported content type: ${
-              metadata.headers["content-type"] || "undefined"
-            }`,
-          );
+          // we don't need to parse the other mime types
+          break;
         }
       }
 
@@ -209,34 +162,49 @@ server.configureQueues({
     },
   ],
   write: [
-    async (job, next) =>
+    async ({ job, context }, next) =>
       await isAlreadyRequested(
         {
           job,
-          tracker: writeTracker,
-          getKey: (job) => job.data.uri,
+          tracker: context.writeTracker,
         },
         next,
       ),
-    async (job, next) =>
+    async ({ job, context }, next) =>
       await handleRedirected(
         {
           job,
-          events: server.events,
-          cache,
-          getKey: (job) => job.data.uri,
+          cache: context.cache,
+          createWriteJob: (writeJobData) =>
+            context.events?.emit("createWriteJob", writeJobData),
         },
         next,
       ),
-    async (job, next) => {
-      const { data: dataOrignal, metadata } = cache.get(job.data.cache.key);
+
+    async ({ job, context }, next) =>
+      await guessMimeType(
+        // adds mimeType to job.data
+        {
+          job,
+          cache: context.cache,
+        },
+        next,
+      ),
+    async ({ job, context }, next) => {
+      const { data: dataOrignal, metadata } = context.cache.get(
+        job.data.cache.key,
+      );
 
       let data = dataOrignal;
 
-      const mime = getMimeWithoutEncoding(metadata.headers["content-type"]);
+      const mime = job.data.mimeType;
 
       if (mime === "text/html") {
-        const $ = cheerio.load(dataOrignal);
+        data = context.dataPatcher.patch(job.data.uri, data, (log) =>
+          job.log(log),
+        );
+
+        const $ = cheerio.load(data);
 
         $(".wiki-no-archive").remove(); // hand-curated elements to remove
 
@@ -276,11 +244,11 @@ server.configureQueues({
           {
             job,
             mime,
-            cache,
-            getKey: (url) => url,
+            cache: context.cache,
             getUrl: ({ absoluteUrl, baseUrl }) =>
               getRelativeURL(absoluteUrl, baseUrl, true, false, true),
-            events: server.events,
+            createWriteJob: (writeJobData) =>
+              context.events?.emit("createWriteJob", writeJobData),
             $,
           },
           next,
@@ -296,15 +264,19 @@ server.configureQueues({
       }
 
       if (mime === "text/css") {
+        data = context.dataPatcher.patch(job.data.uri, data, (log) =>
+          job.log(log),
+        );
+
         data = await rewriteCss({
           content: data,
           job,
           mime,
-          cache,
-          getKey: (url) => url,
+          cache: context.cache,
           getUrl: ({ absoluteUrl, baseUrl }) =>
             getRelativeURL(absoluteUrl, baseUrl, true, false, true),
-          events: server.events,
+          createWriteJob: (writeJobData) =>
+            context.events?.emit("createWriteJob", writeJobData),
         });
 
         try {
