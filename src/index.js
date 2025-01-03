@@ -2,6 +2,7 @@ import { WebServer } from "../packages/scrape-helpers/src/server/server.js";
 import { Cache } from "../packages/scrape-helpers/src/server/utils/Cache.js";
 import { RequestTracker } from "../packages/scrape-helpers/src/server/utils/RequestTracker.js";
 import { DataPatcher } from "../packages/scrape-helpers/src/server/utils/DataPatcher.js";
+import { getRelativeURL } from "../packages/scrape-helpers/src/server/utils/getRelativeURL.js";
 import { getMimeWithoutEncoding } from "../packages/scrape-helpers/src/server/utils/mime.js";
 import prettier from "prettier";
 import * as cheerio from "cheerio";
@@ -25,6 +26,7 @@ import {
 import {
   writeData,
   handleRedirected,
+  rewriteHtml,
 } from "../packages/scrape-helpers/src/server/processor/write.js";
 
 // Create instances of required components
@@ -219,10 +221,23 @@ server.configureQueues({
       let data = dataOrignal;
 
       const mime = getMimeWithoutEncoding(metadata.headers["content-type"]);
-      console.log(mime);
 
       if (mime === "text/html") {
         const $ = cheerio.load(dataOrignal);
+
+        await rewriteHtml(
+          {
+            job,
+            cache,
+            getKey: (url) => url,
+            getUrl: ({ url, baseUrl }) =>
+              getRelativeURL(url, baseUrl, true, false, true),
+            events: server.events,
+            $,
+          },
+          next,
+        );
+
         data = $.html();
 
         try {
