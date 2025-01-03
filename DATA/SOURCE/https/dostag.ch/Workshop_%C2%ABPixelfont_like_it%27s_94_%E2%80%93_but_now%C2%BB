@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <title>Workshop «Pixelfont like it's 94 – but now» – DOSDAY</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Workshop_«Pixelfont_like_it's_94_–_but_now»","wgTitle":"Workshop «Pixelfont like it's 94 – but now»","wgCurRevisionId":72,"wgRevisionId":72,"wgArticleId":6,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Workshop_«Pixelfont_like_it's_94_–_but_now»","wgRelevantArticleId":6,"wgRequestId":"Z3Cd95fb5WmGeI3IcPc5PgAAAAM","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Workshop_«Pixelfont_like_it's_94_–_but_now»","wgTitle":"Workshop «Pixelfont like it's 94 – but now»","wgCurRevisionId":72,"wgRevisionId":72,"wgArticleId":6,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Workshop_«Pixelfont_like_it's_94_–_but_now»","wgRelevantArticleId":6,"wgRequestId":"Z3g6@oTlsf9LtG1lbsGWvgAAAAM","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
 });mw.loader.implement("user.tokens@00699yy",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
 <link rel="stylesheet" href="/load.php?debug=false&amp;lang=de&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
@@ -58,11 +58,11 @@
 
 <!-- 
 NewPP limit report
-Cached time: 20241229002154
+Cached time: 20250103131841
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.027 seconds
-Real time usage: 0.104 seconds
+CPU time usage: 0.021 seconds
+Real time usage: 0.307 seconds
 Preprocessor visited node count: 18/1000000
 Preprocessor generated node count: 24/1000000
 Post‐expand include size: 0/2097152 bytes
@@ -77,7 +77,7 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
 </div>
-<!-- Saved in parser cache with key mediawiki_7:pcache:idhash:6-0!canonical and timestamp 20241229002154 and revision id 72
+<!-- Saved in parser cache with key mediawiki_7:pcache:idhash:6-0!canonical and timestamp 20250103131840 and revision id 72
  -->
 </div>					<div class="printfooter">
 						Abgerufen von „<a dir="ltr" href="https://dostag.ch/index.php?title=Workshop_«Pixelfont_like_it%27s_94_–_but_now»&amp;oldid=72">https://dostag.ch/index.php?title=Workshop_«Pixelfont_like_it%27s_94_–_but_now»&amp;oldid=72</a>“					</div>
@@ -167,6 +167,6 @@ Transclusion expansion time report (%,ms,calls,template)
 									</ul>
 						<div style="clear: both;"></div>
 		</div>
-		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.027","walltime":"0.104","ppvisitednodes":{"value":18,"limit":1000000},"ppgeneratednodes":{"value":24,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20241229002154","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":160});});</script>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.021","walltime":"0.307","ppvisitednodes":{"value":18,"limit":1000000},"ppgeneratednodes":{"value":24,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20250103131841","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":656});});</script>
 	</body>
 </html>

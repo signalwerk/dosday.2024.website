@@ -1,13 +1,13 @@
 {
   "headers": {
     "server": "nginx",
-    "date": "Sun, 29 Dec 2024 00:55:19 GMT",
+    "date": "Fri, 03 Jan 2025 19:31:08 GMT",
     "content-type": "text/javascript; charset=utf-8",
     "content-length": "6459",
     "connection": "keep-alive",
     "x-content-type-options": "nosniff",
     "cache-control": "public, max-age=300, s-maxage=300",
-    "expires": "Sun, 29 Dec 2024 01:00:19 GMT",
+    "expires": "Fri, 03 Jan 2025 19:36:08 GMT",
     "link": "</load.php?debug=false&lang=de&modules=jquery%2Cmediawiki&only=scripts&skin=vector&version=1frs7h3>;rel=preload;as=script",
     "etag": "W/\"0u1dkd0-gzip\"",
     "vary": "Accept-Encoding,User-Agent"

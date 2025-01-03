@@ -1,14 +1,14 @@
 {
   "headers": {
     "server": "nginx",
-    "date": "Sun, 29 Dec 2024 00:55:19 GMT",
+    "date": "Fri, 03 Jan 2025 19:31:07 GMT",
     "content-type": "text/css; charset=utf-8",
     "content-length": "9215",
     "connection": "keep-alive",
     "x-content-type-options": "nosniff",
     "access-control-allow-origin": "*",
     "cache-control": "public, max-age=300, s-maxage=300",
-    "expires": "Sun, 29 Dec 2024 01:00:19 GMT",
+    "expires": "Fri, 03 Jan 2025 19:36:07 GMT",
     "etag": "W/\"1js9mlb-gzip\"",
     "vary": "Accept-Encoding,User-Agent"
   },

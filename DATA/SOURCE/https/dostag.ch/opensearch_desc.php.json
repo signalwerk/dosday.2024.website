@@ -1,12 +1,12 @@
 {
   "headers": {
     "server": "nginx",
-    "date": "Sun, 29 Dec 2024 00:55:19 GMT",
+    "date": "Fri, 03 Jan 2025 19:31:03 GMT",
     "content-type": "application/opensearchdescription+xml",
     "transfer-encoding": "chunked",
     "connection": "keep-alive",
     "x-content-type-options": "nosniff",
-    "expires": "Sun, 29 Dec 2024 01:05:19 GMT",
+    "expires": "Fri, 03 Jan 2025 19:41:03 GMT",
     "cache-control": "max-age=600",
     "vary": "User-Agent"
   },
