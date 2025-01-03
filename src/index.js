@@ -47,10 +47,7 @@ const dataPatcher = new DataPatcher();
 
 // Create server instance
 const server = new WebServer({
-  urls: [
-    "https://dostag.ch/load.php?debug=false&lang=de&modules=jquery%2Cmediawiki&only=scripts&skin=vector&version=1frs7h3",
-    "https://dostag.ch",
-  ],
+  urls: ["https://dostag.ch"],
   cache,
   dataPatcher,
   requestTracker,
@@ -76,7 +73,7 @@ server.configureQueues({
         {
           job,
           disallowed: [
-            /.*(Diskussion|action|Spezial|Benutzer.*oldid|Hauptseite.*oldid|title=.*oldid|printable=yes).*/i,
+            /.*(Diskussion|action=|Spezial|Benutzer.*oldid|Hauptseite.*oldid|title=.*oldid|printable=yes).*/i,
           ],
         },
         next,
@@ -249,30 +246,31 @@ server.configureQueues({
         $(".mw-editsection").remove(); // remove edit links
         $(".printfooter").remove(); // remove footer in print view
 
-        // $('link[type="application/x-wiki"]').remove(); // remove feeds
-        // $('link[type="application/rsd+xml"]').remove(); // remove feeds
-        // $('link[type="application/atom+xml"]').remove(); // remove feeds
-        // $('link[type="application/opensearchdescription+xml"]').remove(); // remove feeds
+        $('link[type="application/x-wiki"]').remove(); // remove feeds
+        $('link[type="application/rsd+xml"]').remove(); // remove feeds
+        $('link[type="application/atom+xml"]').remove(); // remove feeds
+        $('link[type="application/opensearchdescription+xml"]').remove(); // remove feeds
 
-        // $("#n-recentchanges").remove(); // remove «Letzte Änderungen»
-        // $("#n-randompage").remove(); // remove «Zufällige Seite»
-        // $("#n-help-mediawiki, #n-help").remove(); // remove «Hilfe zu MediaWiki»  1.39.1, v1.31.0
-        // $("#p-tb").remove(); // remvoe «Werkzeuge»
+        $("#n-recentchanges").remove(); // remove «Letzte Änderungen»
+        $("#n-randompage").remove(); // remove «Zufällige Seite»
+        $("#n-help-mediawiki, #n-help").remove(); // remove «Hilfe zu MediaWiki»  1.39.1, v1.31.0
+        $("#p-tb").remove(); // remove «Werkzeuge»
 
-        // $("#right-navigation").remove(); // remove «Hauptseite | Diskussion»
-        // $("#left-navigation").remove(); // remvoe «Lesen | Bearbeiten | Versionsgeschichte | Search»
-        // $("#mw-head").remove(); // remove «Nicht angemeldet | Diskussionsseite | Beiträge | Benutzerkonto erstellen | Anmelden»
+        $("#right-navigation").remove(); // remove «Lesen | Bearbeiten | Versionsgeschichte | Search»
+        $("#left-navigation").remove(); // remove «Hauptseite | Diskussion»
 
-        // // remove some js comming from loader/modules
-        // $('script[src^="/load.php"]').remove();
+        $("#mw-head").remove(); // remove «Nicht angemeldet | Diskussionsseite | Beiträge | Benutzerkonto erstellen | Anmelden»
 
-        // // remove links to creat new pages
-        // $("a.new").each(function () {
-        //   $(this).replaceWith($(this).text());
-        // });
+        // remove some js comming from loader/modules
+        $('script[src^="/load.php"]').remove();
 
-        // // remove «(Diskussion | Beiträge)» form user links
-        // $(".mw-usertoollinks").remove();
+        // remove links to creat new pages
+        $("a.new").each(function () {
+          $(this).replaceWith($(this).text());
+        });
+
+        // remove «(Diskussion | Beiträge)» form user links (on media/image pages)
+        $(".mw-usertoollinks").remove();
 
         await rewriteHtml(
           {

@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "server": "nginx",
+    "date": "Fri, 03 Jan 2025 19:37:37 GMT",
+    "content-type": "text/css; charset=utf-8",
+    "content-length": "9605",
+    "connection": "keep-alive",
+    "x-content-type-options": "nosniff",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=300, s-maxage=300",
+    "expires": "Fri, 03 Jan 2025 19:42:37 GMT",
+    "etag": "W/\"0kheq50-gzip\"",
+    "vary": "Accept-Encoding,User-Agent"
+  },
+  "status": 200,
+  "uri": "https://dostag.ch/load.php?debug=false&lang=de&modules=mediawiki.action.view.filepage%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&only=styles&skin=vector"
+}
