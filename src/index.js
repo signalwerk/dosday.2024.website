@@ -2,6 +2,9 @@ import { WebServer } from "../packages/scrape-helpers/src/server/server.js";
 import { Cache } from "../packages/scrape-helpers/src/server/utils/Cache.js";
 import { RequestTracker } from "../packages/scrape-helpers/src/server/utils/RequestTracker.js";
 import { DataPatcher } from "../packages/scrape-helpers/src/server/utils/DataPatcher.js";
+import { getMimeWithoutEncoding } from "../packages/scrape-helpers/src/server/utils/mime.js";
+import prettier from "prettier";
+import * as cheerio from "cheerio";
 
 import {
   isDomainValid,
@@ -19,7 +22,10 @@ import {
   isCached,
   fetchHttp,
 } from "../packages/scrape-helpers/src/server/processor/fetch.js";
-import { writeData } from "../packages/scrape-helpers/src/server/processor/write.js";
+import {
+  writeData,
+  handleRedirected,
+} from "../packages/scrape-helpers/src/server/processor/write.js";
 
 // Create instances of required components
 const cache = new Cache();
@@ -197,31 +203,40 @@ server.configureQueues({
     },
   ],
   write: [
-    // async (job, next) =>
-    //   await isCached(
-    //     {
-    //       job,
-    //       events: server.events,
-    //       cache,
-    //       getKey: (job) => job.data.uri,
-    //     },
-    //     next,
-    //   ),
+    async (job, next) =>
+      await handleRedirected(
+        {
+          job,
+          events: server.events,
+          cache,
+          getKey: (job) => job.data.uri,
+        },
+        next,
+      ),
     async (job, next) => {
-      const key = job.data.uri;
+      const { data: dataOrignal, metadata } = cache.get(job.data.cache.key);
 
-      if (cache.has(key)) {
-        job.log(`File in cache`);
+      let data = dataOrignal;
+
+      const mime = getMimeWithoutEncoding(metadata.headers["content-type"]);
+      console.log(mime);
+
+      if (mime === "text/html") {
+        const $ = cheerio.load(dataOrignal);
+        data = $.html();
+
+        try {
+          data = await prettier.format(data, { parser: "html" });
+        } catch (error) {
+          throw new Error(`Error formatting HTML: ${error}`);
+        }
       }
-
-      const { data, metadata } = cache.get(key);
 
       await writeData(
         {
           job,
           data,
           metadata,
-          events: server.events,
         },
         next,
       );
