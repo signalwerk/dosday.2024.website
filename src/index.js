@@ -10,8 +10,8 @@ import * as cheerio from "cheerio";
 import {
   isDomainValid,
   isPathValid,
-  isAlreadyRequested,
 } from "../packages/scrape-helpers/src/server/processor/request.js";
+import { isAlreadyRequested } from "../packages/scrape-helpers/src/server/processor/general.js";
 import {
   addParseJob,
   guessMimeType,
@@ -32,6 +32,7 @@ import {
 // Create instances of required components
 const cache = new Cache();
 const requestTracker = new RequestTracker();
+const writeTracker = new RequestTracker();
 const dataPatcher = new DataPatcher();
 
 // Configure data patcher rules
@@ -48,6 +49,7 @@ const server = new WebServer({
   cache,
   dataPatcher,
   requestTracker,
+  writeTracker,
   requestConcurrency: 100,
   fetchConcurrency: 10,
   parseConcurrency: 100,
@@ -78,7 +80,7 @@ server.configureQueues({
       await isAlreadyRequested(
         {
           job,
-          requestTracker,
+          tracker: requestTracker,
           getKey: (job) => job.data.uri,
         },
         next,
@@ -206,6 +208,15 @@ server.configureQueues({
   ],
   write: [
     async (job, next) =>
+      await isAlreadyRequested(
+        {
+          job,
+          tracker: writeTracker,
+          getKey: (job) => job.data.uri,
+        },
+        next,
+      ),
+    async (job, next) =>
       await handleRedirected(
         {
           job,
@@ -228,10 +239,11 @@ server.configureQueues({
         await rewriteHtml(
           {
             job,
+            mime,
             cache,
             getKey: (url) => url,
-            getUrl: ({ url, baseUrl }) =>
-              getRelativeURL(url, baseUrl, true, false, true),
+            getUrl: ({ absoluteUrl, baseUrl }) =>
+              getRelativeURL(absoluteUrl, baseUrl, true, false, true),
             events: server.events,
             $,
           },
