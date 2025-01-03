@@ -27,6 +27,7 @@ import {
   writeData,
   handleRedirected,
   rewriteHtml,
+  rewriteCss,
 } from "../packages/scrape-helpers/src/server/processor/write.js";
 
 // Create instances of required components
@@ -46,6 +47,10 @@ const dataPatcher = new DataPatcher();
 
 // Create server instance
 const server = new WebServer({
+  urls: [
+    "https://dostag.ch/load.php?debug=false&lang=de&modules=jquery%2Cmediawiki&only=scripts&skin=vector&version=1frs7h3",
+    "https://dostag.ch",
+  ],
   cache,
   dataPatcher,
   requestTracker,
@@ -236,6 +241,39 @@ server.configureQueues({
       if (mime === "text/html") {
         const $ = cheerio.load(dataOrignal);
 
+        $(".wiki-no-archive").remove(); // hand-curated elements to remove
+
+        $("#footer-icons").remove(); // remove footer mediawiki icon
+        $("#footer-places").remove(); // remove «Datenschutz | Über DDOS | Haftungsausschluss»
+
+        $(".mw-editsection").remove(); // remove edit links
+        $(".printfooter").remove(); // remove footer in print view
+
+        // $('link[type="application/x-wiki"]').remove(); // remove feeds
+        // $('link[type="application/rsd+xml"]').remove(); // remove feeds
+        // $('link[type="application/atom+xml"]').remove(); // remove feeds
+        // $('link[type="application/opensearchdescription+xml"]').remove(); // remove feeds
+
+        // $("#n-recentchanges").remove(); // remove «Letzte Änderungen»
+        // $("#n-randompage").remove(); // remove «Zufällige Seite»
+        // $("#n-help-mediawiki, #n-help").remove(); // remove «Hilfe zu MediaWiki»  1.39.1, v1.31.0
+        // $("#p-tb").remove(); // remvoe «Werkzeuge»
+
+        // $("#right-navigation").remove(); // remove «Hauptseite | Diskussion»
+        // $("#left-navigation").remove(); // remvoe «Lesen | Bearbeiten | Versionsgeschichte | Search»
+        // $("#mw-head").remove(); // remove «Nicht angemeldet | Diskussionsseite | Beiträge | Benutzerkonto erstellen | Anmelden»
+
+        // // remove some js comming from loader/modules
+        // $('script[src^="/load.php"]').remove();
+
+        // // remove links to creat new pages
+        // $("a.new").each(function () {
+        //   $(this).replaceWith($(this).text());
+        // });
+
+        // // remove «(Diskussion | Beiträge)» form user links
+        // $(".mw-usertoollinks").remove();
+
         await rewriteHtml(
           {
             job,
@@ -256,6 +294,25 @@ server.configureQueues({
           data = await prettier.format(data, { parser: "html" });
         } catch (error) {
           throw new Error(`Error formatting HTML: ${error}`);
+        }
+      }
+
+      if (mime === "text/css") {
+        data = await rewriteCss({
+          content: data,
+          job,
+          mime,
+          cache,
+          getKey: (url) => url,
+          getUrl: ({ absoluteUrl, baseUrl }) =>
+            getRelativeURL(absoluteUrl, baseUrl, true, false, true),
+          events: server.events,
+        });
+
+        try {
+          data = await prettier.format(`${data}`, { parser: "css" });
+        } catch (error) {
+          throw new Error(`Error formatting CSS: ${error}`);
         }
       }
 
