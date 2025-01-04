@@ -1,6 +1,7 @@
 import { WebServer } from "../packages/scrape-helpers/src/server/server.js";
 import { getRelativeURL } from "../packages/scrape-helpers/src/server/utils/getRelativeURL.js";
 import { DataPatcher } from "../packages/scrape-helpers/src/server/utils/DataPatcher.js";
+import { removeCommentsIf } from "../packages/scrape-helpers/src/server/processor/cheerio-helper.js";
 
 import {
   isDomainValid,
@@ -81,18 +82,16 @@ server.configureQueues({
         getRelativeURL(absoluteUrl, baseUrl, true, false, true),
       rewrite: {
         ["text/html"]: ($) => {
-          // Traverse the DOM and remove soeme comment nodes
-          $("*")
-            .contents()
-            .each(function () {
-              if (
-                this.type === "comment" &&
-                (this.data.includes("Saved in parser cache with") ||
-                  this.data.includes("NewPP limit report"))
-              ) {
-                $(this).remove();
-              }
-            });
+          removeCommentsIf($, {
+            includes: "Saved in parser cache with",
+          });
+          removeCommentsIf($, {
+            includes: "NewPP limit report",
+          });
+          // This function removes old IE conditional comments from the HTML.
+          removeCommentsIf($, {
+            includes: ["[if", "endif]"],
+          });
 
           $(".wiki-no-archive").remove(); // hand-curated elements to remove
 
