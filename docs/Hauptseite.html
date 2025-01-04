@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="client-nojs" lang="de" dir="ltr">
   <head>
     <meta charset="UTF-8" />
@@ -93,7 +93,7 @@
           },
         );
         mw.loader.implement(
-          "user.tokens@19irde4",
+          "user.tokens@0000000",
           function ($, jQuery, require, module) {
             /*@nomin*/ mw.user.tokens.set({
               editToken: "+\\",
@@ -115,7 +115,7 @@
     </script>
     <link
       rel="stylesheet"
-      href="load.php%3Fdebug=false&amp;lang=de&amp;modules=mediawiki.legacy.commonPrint,shared|mediawiki.sectionAnchor|mediawiki.skinning.interface|skins.vector.styles&amp;only=styles&amp;skin=vector.css"
+      href="./load.php%3Fdebug=false&amp;lang=de&amp;modules=mediawiki.legacy.commonPrint,shared|mediawiki.sectionAnchor|mediawiki.skinning.interface|skins.vector.styles&amp;only=styles&amp;skin=vector.css"
     />
 
     <meta name="ResourceLoaderDynamicStyles" content="" />
@@ -126,7 +126,7 @@
       title="Bearbeiten"
       href="/index.php?title=Hauptseite&amp;action=edit"
     />
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="./favicon.ico" />
 
     <!--[if lt IE 9
       ]><script src="/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script
@@ -145,24 +145,21 @@
         <div id="siteSub" class="noprint">Aus DOSDAY</div>
         <div id="contentSub"></div>
         <div id="jump-to-nav" class="mw-jump">
-          Wechseln zu:
-          <a href="index.php%3Ftitle=Hauptseite.html#mw-head">Navigation</a>,
-          <a href="index.php%3Ftitle=Hauptseite.html#p-search">Suche</a>
+          Wechseln zu: <a href="#mw-head">Navigation</a>,
+          <a href="#p-search">Suche</a>
         </div>
         <div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr">
           <div class="mw-parser-output">
             <div class="floatright">
-              <a
-                href="index.php%3Ftitle=Datei%3ADOSDAY24-Logo.jpeg.html"
-                class="image"
+              <a href="./Datei:DOSDAY24-Logo.jpeg.html" class="image"
                 ><img
                   alt="DOSDAY24-Logo.jpeg"
-                  src="images/thumb/0/0c/DOSDAY24-Logo.jpeg/300px-DOSDAY24-Logo.jpeg"
+                  src="./images/thumb/0/0c/DOSDAY24-Logo.jpeg/300px-DOSDAY24-Logo.jpeg"
                   width="300"
                   height="300"
                   srcset="
-                    images/thumb/0/0c/DOSDAY24-Logo.jpeg/450px-DOSDAY24-Logo.jpeg 1.5x,
-                    images/thumb/0/0c/DOSDAY24-Logo.jpeg/600px-DOSDAY24-Logo.jpeg 2x
+                    ./images/thumb/0/0c/DOSDAY24-Logo.jpeg/450px-DOSDAY24-Logo.jpeg 1.5x,
+                    ./images/thumb/0/0c/DOSDAY24-Logo.jpeg/600px-DOSDAY24-Logo.jpeg 2x
                   "
               /></a>
             </div>
@@ -171,27 +168,21 @@
             <ul>
               <li>
                 Kommst du auch? →
-                <a
-                  href="index.php%3Ftitle=Teilnehmende_2024.html"
-                  title="Teilnehmende 2024"
+                <a href="./Teilnehmende_2024.html" title="Teilnehmende 2024"
                   >Liste der Teilnehmenden</a
                 >
                 ←
               </li>
               <li>
                 Was möchtest du machen? →
-                <a
-                  href="index.php%3Ftitle=Fahrplan_2024.html"
-                  title="Fahrplan 2024"
+                <a href="./Fahrplan_2024.html" title="Fahrplan 2024"
                   >Fahrplan</a
                 >
                 ←
               </li>
               <li>
                 Bringst du Geräte mit? →
-                <a
-                  href="index.php%3Ftitle=Ausstellung_2024.html"
-                  title="Ausstellung 2024"
+                <a href="./Ausstellung_2024.html" title="Ausstellung 2024"
                   >Ausstellung</a
                 >
                 ←
@@ -223,29 +214,12 @@
               <br />
               Wir freuen uns auf Dich!
             </p>
-            <!-- 
-NewPP limit report
-Cached time: 20241027020239
-Cache expiry: 86400
-Dynamic content: false
-CPU time usage: 0.131 seconds
-Real time usage: 1.413 seconds
-Preprocessor visited node count: 1/1000000
-Preprocessor generated node count: 4/1000000
-Post‐expand include size: 0/2097152 bytes
-Template argument size: 0/2097152 bytes
-Highest expansion depth: 1/40
-Expensive parser function count: 0/100
-Unstrip recursion depth: 0/20
-Unstrip post‐expand size: 0/5000000 bytes
--->
+
             <!--
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
           </div>
-          <!-- Saved in parser cache with key mediawiki_7:pcache:idhash:1-0!canonical and timestamp 20241027020237 and revision id 60
- -->
         </div>
         <div
           id="catlinks"
@@ -260,11 +234,7 @@ Transclusion expansion time report (%,ms,calls,template)
 
       <div id="mw-panel">
         <div id="p-logo" role="banner">
-          <a
-            class="mw-wiki-logo"
-            href="index.php%3Ftitle=Hauptseite.html"
-            title="Hauptseite"
-          ></a>
+          <a class="mw-wiki-logo" href="/Hauptseite" title="Hauptseite"></a>
         </div>
         <div
           class="portal"
@@ -277,7 +247,7 @@ Transclusion expansion time report (%,ms,calls,template)
             <ul>
               <li id="n-mainpage-description">
                 <a
-                  href="index.php%3Ftitle=Hauptseite.html"
+                  href="/Hauptseite"
                   title="Hauptseite besuchen [z]"
                   accesskey="z"
                   >Hauptseite</a
