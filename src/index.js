@@ -5,8 +5,8 @@ import { DataPatcher } from "../packages/scrape-helpers/src/server/utils/DataPat
 import {
   isDomainValid,
   isPathValid,
+  isAlreadyRequested,
 } from "../packages/scrape-helpers/src/server/processor/request.js";
-import { isAlreadyRequested } from "../packages/scrape-helpers/src/server/processor/general.js";
 import {
   addParseJob,
   guessMimeType,
@@ -20,6 +20,7 @@ import {
 import {
   handleRedirected,
   writeOutput,
+  isAlreadyWritten,
 } from "../packages/scrape-helpers/src/server/processor/write.js";
 
 const dataPatcher = new DataPatcher();
@@ -66,17 +67,13 @@ server.configureQueues({
         /.*(Diskussion|action=|Spezial|Benutzer.*oldid|Hauptseite.*oldid|title=.*oldid|printable=yes).*/i,
       ],
     }),
-    isAlreadyRequested({
-      tracker: "requestTracker",
-    }),
+    isAlreadyRequested(),
     addFetchJob(),
   ],
   fetch: [isCached(), fetchHttp(), addParseJob()],
   parse: [guessMimeType(), parseFiles()],
   write: [
-    isAlreadyRequested({
-      tracker: "writeTracker",
-    }),
+    isAlreadyWritten(),
     handleRedirected(),
     guessMimeType(),
     writeOutput({
