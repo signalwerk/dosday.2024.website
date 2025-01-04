@@ -8,6 +8,7 @@
     "dev:server": "nodemon --watch ./src --watch ./packages/scrape-helpers/src/server --exec node ./src/",
     "dev:client": "vite --config ./packages/scrape-helpers/src/client/vite.config.js",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:post": "rm -rf ./docs && mv DATA/OUT/dostag.ch ./docs && cp -a ./public/. ./docs/ && cp ./docs/Hauptseite.html ./docs/index.html",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch --testPathIgnorePatterns='OLD_V1'"
   },
