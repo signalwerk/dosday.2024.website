@@ -1,6 +1,6 @@
 # dostag.ch – scrape 2024
 
-At the end run `npm run build:post` to move the files to the dist folder.
+Run `npm run dev` to start the development server. And open the web interface. At the end run `npm run build:post` to move the files to the dist folder.
 
 <!-- readme-start -->
 
