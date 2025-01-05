@@ -101,6 +101,8 @@ server.configureQueues({
           $(".mw-editsection").remove(); // remove edit links
           $(".printfooter").remove(); // remove footer in print view
 
+          $('link[rel="edit"]').remove(); // remove edit links
+
           $('link[type="application/x-wiki"]').remove(); // remove feeds
           $('link[type="application/rsd+xml"]').remove(); // remove feeds
           $('link[type="application/atom+xml"]').remove(); // remove feeds
